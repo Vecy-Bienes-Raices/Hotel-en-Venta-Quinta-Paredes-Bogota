@@ -4,13 +4,13 @@
  */
 const propertyConfig = {
   seo: {
-    title: "Edificio en Venta - San Luis Teusaquillo, Bogotá | Gran Inversión",
-    description: "Edificio en Venta Teusaquillo Bogotá - $3.000 Millones - 1.068 m² - Rentando aprox $20M/mes - Ideal Inversionistas - Uso Mixto (Local, Oficinas, Airbnb).",
+    title: "Edificio en Venta - Teusaquillo, Bogotá | Gran Inversión",
+    description: "Edificio en Venta Teusaquillo Bogotá - Rentando aprox $20M/mes - Ideal Inversionistas - Uso Mixto (Local, Oficinas, Airbnb).",
     keywords: "Venta Edificio Teusaquillo, Inversión Inmobiliaria Bogotá, Edificio Renta Bogotá, Venta Edificio San Luis, Propiedad Raíz Comercial Bogotá",
     ogUrl: "https://edificio-teusaquillo-bogota.netlify.app/",
     ogImage: "assets/1.png",
-    author: "Vecy Bienes Raíces",
-    copyright: "Vecy Bienes Raíces"
+    author: "",
+    copyright: ""
   },
   
   infoPrincipal: {
@@ -60,12 +60,12 @@ const propertyConfig = {
     { name: "Vías Principales", emoji: "🛣️" },
     { name: "Zona de Alta Demanda", emoji: "📈" }
   ],
-  destacadoUbicacion: "Ubicado en <strong>San Luis - Teusaquillo</strong> (Carrera 16 # 60 - 12), el corazón de Bogotá. Rodeado de universidades y comercio, garantizando una <strong>ocupación constante</strong>.",
+  destacadoUbicacion: "Ubicado en <strong>Barrio San Luis - Teusaquillo</strong>, el corazón de Bogotá. Rodeado de universidades y comercio, garantizando una <strong>ocupación constante</strong>.",
 
   mapa: {
-    // Embed dinámico usando la dirección exacta con formato estándar
-    urlEmbed: "https://maps.google.com/maps?q=Carrera+16+%2360-12%2C+Bogot%C3%A1&t=&z=16&ie=UTF8&iwloc=&output=embed",
-    titulo: "Ubicación exacta: Carrera 16 # 60 - 12"
+    // Embed dinámico usando la dirección del barrio (sin dirección exacta)
+    urlEmbed: "https://maps.google.com/maps?q=San+Luis%2C+Teusaquillo%2C+Bogot%C3%A1&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    titulo: "Ubicación: Barrio San Luis, Teusaquillo"
   },
 
   descripcionFinal: {
@@ -111,7 +111,7 @@ const propertyConfig = {
   share: {
     whatsappText: `🏢 *EDIFICIO EN VENTA - TEUSAQUILLO, BOGOTÁ*
 
-📍 Ubicación: Cra 16 # 60 - 12 (San Luis)
+📍 Ubicación: Barrio San Luis – Teusaquillo
 💲 Precio: $3.000.000.000
 💰 Rentabilidad: $17 - $20 Millones/mes (Actualmente)
 📈 Proyección: +$30 Millones/mes

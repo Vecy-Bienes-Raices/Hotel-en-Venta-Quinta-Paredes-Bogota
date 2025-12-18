@@ -8,7 +8,7 @@ Este proyecto contiene la ficha técnica digital para la venta del Edificio ubic
 
 Ficha técnica moderna, responsiva y diseñada para enamorar a inversionistas.
 
-- **Diseño:** Minimalista, colores tierra/dorado (Estilo Vecy Bienes Raíces).
+- **Diseño:** Minimalista, colores tierra/dorado.
 - **Tecnología:** HTML5, CSS3 (Glassmorphism), JavaScript (Configuración dinámica).
 - **Optimización:** Carga rápida de imágenes, SEO optimizado para redes sociales.
 
@@ -29,4 +29,4 @@ Para actualizar la información:
 3. Los cambios se reflejarán en pocos minutos.
 
 ---
-**Desarrollado por:** Vecy Bienes Raíces - Tecnología Inmobiliaria
+**Ficha Técnica Digital Inmobiliaria**
