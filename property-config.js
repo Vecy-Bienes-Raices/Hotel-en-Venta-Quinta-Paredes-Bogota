@@ -63,24 +63,31 @@ const propertyConfig = {
   destacadoUbicacion: "Ubicado en <strong>San Luis - Teusaquillo</strong> (Carrera 16 # 60 - 12), el corazón de Bogotá. Rodeado de universidades y comercio, garantizando una <strong>ocupación constante</strong>.",
 
   mapa: {
-    // Embed dinámico usando la dirección exacta
-    urlEmbed: "https://maps.google.com/maps?q=Carrera+16+%2360-12%2C+Bogot%C3%A1&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    // Embed dinámico usando la dirección exacta con formato estándar
+    urlEmbed: "https://maps.google.com/maps?q=Carrera+16+%2360-12%2C+Bogot%C3%A1&t=&z=16&ie=UTF8&iwloc=&output=embed",
     titulo: "Ubicación exacta: Carrera 16 # 60 - 12"
   },
 
   descripcionFinal: {
     titulo: "🚀 Proyección de Inversión (ROI)",
-    texto: `💰 <strong>Rentabilidad Actual:</strong> Ingresos netos entre <strong>$17 a $20 Millones mensuales</strong> (ROI anual aprox 8.27%).
-    <br><br>
-    📈 <strong>Potencial de Expansión:</strong>
-    <ul>
-      <li>Amoblar las 9 habitaciones del 4º piso.</li>
-      <li>Convertir las 9 oficinas del 2º piso en Airbnb.</li>
-      <li>Adecuar el local de la clínica en más habitaciones.</li>
-      <li>Construir +8 habitaciones en el patio.</li>
-    </ul>
-    <br>
-    👉 <strong>Proyección:</strong> ¡Podría superar los <strong>$30 Millones mensuales</strong> con estas adecuaciones! Un inmueble que crece contigo.`
+    texto: `
+    <div class="roi-item">
+      💰 <strong>Rentabilidad Actual:</strong> Ingresos netos entre <strong>$17 a $20 Millones mensuales</strong> (ROI anual aprox 8.27%).
+    </div>
+    
+    <div class="roi-item">
+      📈 <strong>Potencial de Expansión:</strong>
+      <ul class="roi-list">
+        <li>Amoblar las 9 habitaciones del 4º piso.</li>
+        <li>Convertir las 9 oficinas del 2º piso en Airbnb.</li>
+        <li>Adecuar el local de la clínica en más habitaciones.</li>
+        <li>Construir +8 habitaciones en el patio.</li>
+      </ul>
+    </div>
+    
+    <div class="roi-item projection">
+      👉 <strong>Proyección:</strong> ¡Podría superar los <strong>$30 Millones mensuales</strong> con estas adecuaciones! Un inmueble que crece contigo.
+    </div>`
   },
 
   multimedia: {
