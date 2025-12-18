@@ -23,6 +23,7 @@ Ficha técnica moderna, responsiva y diseñada para enamorar a inversionistas.
 Este proyecto está configurado para desplegarse automáticamente en **Netlify** o **GitHub Pages**.
 
 Para actualizar la información:
+
 1. Edita `property-config.js`.
 2. Haz commit y push al repositorio.
 3. Los cambios se reflejarán en pocos minutos.
