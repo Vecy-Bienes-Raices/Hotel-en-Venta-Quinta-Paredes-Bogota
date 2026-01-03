@@ -485,6 +485,14 @@
         .specs-grid {
           grid-template-columns: repeat(2, 1fr);
         }
+        .spec-item .label {
+          color: #5d4037 !important; /* Dark Brown for readability */
+          text-shadow: none !important;
+        }
+        .footer p {
+          color: #3e2723 !important; /* Dark text for footer */
+          text-shadow: none !important;
+        }
         .amenities-list {
           grid-template-columns: 1fr;
         }
@@ -503,15 +511,19 @@
         }
 
         .glass-card {
-           background: rgba(255, 255, 255, 0.92); /* Opaque fallback */
+           background: rgba(255, 255, 255, 0.95); /* Opaque fallback */
+           box-shadow: 0 4px 10px rgba(0,0,0,0.05) !important;
         }
         
         .spec-item, .amenity-item {
-            background: rgba(255, 255, 255, 0.85);
+            background: #fffdf5; /* Ivory tint */
+            border: 1px solid rgba(0,0,0,0.08);
+            box-shadow: none !important;
         }
 
         .highlight-box {
-             background: rgba(212, 175, 55, 0.15);
+             background: rgba(212, 175, 55, 0.1);
+             border: 1px solid rgba(212, 175, 55, 0.3);
         }
       }
 
