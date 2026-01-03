@@ -39,7 +39,7 @@ const propertyConfig = {
     { name: "Recepción y Sala Espera", emoji: "🛋️" },
     { name: "9 Oficinas Ocupadas (2º)", emoji: "💼" },
     { name: "11 Habitaciones + Lavandería (3º)", emoji: "🛏️" },
-    { name: "9 Habitaciones + Coworking (4º)", emoji: "💻" },
+    { name: "9 Habitaciones + Estudio (4º)", emoji: "💻" },
     { name: "Cocinas Equipadas por Piso", emoji: "🍳" },
     { name: "Zona Lavandería (3º y 4º)", emoji: "🧺" },
     { name: "Servicios Independientes", emoji: "🛢️" },
@@ -81,7 +81,9 @@ const propertyConfig = {
       <p style="margin-top:10px; font-size: 1.1em;">💵 <strong>TOTAL RENTA ACTUAL: $18.960.000 /mes</strong></p>
 
       <div style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #ffc107; padding: 12px; margin: 15px 0; border-radius: 4px;">
-        ⚠️ <strong>Nota del Propietario:</strong> El ingreso de la clínica corresponde al 50% de su potencial real ($5.8M). El propietario actual (odontólogo) ocupa la otra mitad del espacio y equipos, lo que representa una oportunidad de incremento inmediato para un nuevo inversor.
+        ⚠️ <strong>Nota del Propietario:</strong> El ingreso de la clínica corresponde al 50% de su potencial real ($5.8M). El propietario actual (odontólogo) ocupa la otra mitad del espacio y equipos.
+        <br><br>
+        ℹ️ <strong>Zona de Trabajo:</strong> El espacio del 4º piso no es un coworking comercial; es un beneficio exclusivo para los inquilinos (principalmente estudiantes extranjeros y profesionales), lo que garantiza alta ocupación y valor agregado.
       </div>
 
       <div class="projection" style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; padding: 10px;">
@@ -119,7 +121,7 @@ const propertyConfig = {
 ✅ *Distribución Real:*
 • *1° Piso:* Local ($2.4M) + Clínica ($2.9M) + Patio Amplio
 • *2° Piso:* 9 Oficinas Ocupadas ($4.6M)
-• *3° y 4° Piso:* 20 Habitaciones (Airbnb/Coliving) + Coworking ($9M promedio)
+• *3° y 4° Piso:* 20 Habitaciones (Airbnb/Coliving) + Zona Estudio ($9M promedio)
 🔗 *Ver Fotos y Ficha Técnica:*
 [https://edificio-teusaquillo-bogota.netlify.app/](https://edificio-teusaquillo-bogota.netlify.app/)`
   }
