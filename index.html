@@ -477,6 +477,7 @@
       @media (max-width: 600px) {
         body {
           padding: 10px;
+          background-attachment: scroll; /* Fix for mobile jitter */
         }
         .header h1 {
           font-size: 26px;
@@ -492,6 +493,25 @@
         }
         #shareBtn {
           padding: 12px 20px;
+        }
+
+        /* Performance Optimizations for Mobile */
+        .glass-card, .spec-item, .amenity-item, .highlight-box, .footer {
+          backdrop-filter: none !important;
+          -webkit-backdrop-filter: none !important;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .glass-card {
+           background: rgba(255, 255, 255, 0.92); /* Opaque fallback */
+        }
+        
+        .spec-item, .amenity-item {
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        .highlight-box {
+             background: rgba(212, 175, 55, 0.15);
         }
       }
 
@@ -719,7 +739,14 @@
         }
 
         // --- Video ---
-        document.getElementById("video-element").src = propertyConfig.multimedia.videoUrl;
+        if (propertyConfig.multimedia.videoUrl) {
+            const videoEl = document.getElementById("video-element");
+            videoEl.src = propertyConfig.multimedia.videoUrl;
+            if (propertyConfig.multimedia.videoThumbnail) {
+                videoEl.poster = propertyConfig.multimedia.videoThumbnail;
+            }
+        }
+
 
         // --- Detalles (Specs Grid) ---
         const specsGrid = document.getElementById("specs-grid");
