@@ -679,16 +679,9 @@
         }
 
         // --- SEO & Meta Tags ---
+        // Meta tags ya definidos hardcoded en HTML para mejor compatibilidad con scrapers
         document.title = propertyConfig.seo.title;
-        document.getElementById("seo-description").content = propertyConfig.seo.description;
-        document.getElementById("og-title").content = propertyConfig.seo.title;
-        document.getElementById("og-description").content = propertyConfig.seo.description;
-        document.getElementById("og-url").content = propertyConfig.seo.ogUrl;
-        document.getElementById("og-image").content = propertyConfig.seo.ogImage;
-        document.getElementById("tw-title").content = propertyConfig.seo.title;
-        document.getElementById("tw-description").content = propertyConfig.seo.description;
-        document.getElementById("tw-image").content = propertyConfig.seo.ogImage;
-        document.getElementById("seo-keywords").content = propertyConfig.seo.keywords;
+
 
         // --- Info Principal ---
         document.getElementById("header-badge").innerText = propertyConfig.infoPrincipal.headerBadge;
