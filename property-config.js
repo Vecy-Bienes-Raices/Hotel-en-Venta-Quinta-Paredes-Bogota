@@ -30,7 +30,7 @@ const propertyConfig = {
     { label: "Estado", value: "Remodelado - Triple AAA", icon: "⭐" },
     { label: "ROI Est.", value: "7.58% Anual", icon: "📈" },
     { label: "Pisos", value: "4 Niveles", icon: "🏢" },
-    { label: "Unidades", value: "30+ Espacios", icon: "🔑" }
+    { label: "Unidades", value: "20 Hab + Ofis + Local", icon: "🔑" }
   ],
 
   caracteristicasInternas: [

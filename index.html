@@ -20,6 +20,20 @@
     <meta property="og:type" content="website" />
     <meta name="author" content="" />
     <meta name="robots" content="index, follow" />
+    <script>
+      // Force scroll to top immediately before content loads
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      window.scrollTo(0, 0);
+      
+      // Secondary check on load to ensure it sticks
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      });
+    </script>
 
     <style>
       * {
@@ -682,10 +696,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // --- Scroll to Top & Optimization ---
-        if ('scrollRestoration' in history) {
-          history.scrollRestoration = 'manual';
-        }
-        window.scrollTo(0, 0);
+        // (Moved to Head for faster execution)
 
         if (typeof propertyConfig === "undefined") {
           console.error("No se encontró el archivo property-config.js");
