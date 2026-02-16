@@ -106,6 +106,6 @@ const propertyConfig = {
 🏢 *Estado:* Operando activamente
 
 🔗 *Ver Fotos y Análisis Financiero:*
-https://vecy-bienes-raices.github.io/Hotel-en-Venta-Quinta-Paredes-Bogota/`
+https://hotel-quinta-paredes-bogota.netlify.app/`
   }
 };
