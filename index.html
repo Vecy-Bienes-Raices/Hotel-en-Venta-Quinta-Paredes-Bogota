@@ -532,31 +532,38 @@
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
         }
         
-        /* Faux Glass & 3D Effect for Mobile - MATCHING PC TONES */
+        /* Faux Glass & 3D Effect for Mobile - High Performance "Fake 3D" */
         .glass-card {
-           background: linear-gradient(160deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%); /* Less transparent for readbility */
-           border: 1px solid rgba(255, 255, 255, 0.5);
+           /* Solid background mimicking glass thickness/refraction with gradient */
+           background: linear-gradient(170deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 245, 0.95) 100%);
+           border: 1px solid rgba(255, 255, 255, 0.6);
+           /* Top inset shadow for "highlight" edge effect */
            box-shadow: 
-             0 8px 32px rgba(0, 0, 0, 0.15),
-             inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
+             0 8px 24px rgba(0, 0, 0, 0.12),
+             inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
         }
         
         .spec-item, .amenity-item {
-            background: rgba(255, 255, 255, 0.85); /* More solid */
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+            /* Button-like slight gradient */
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 240, 240, 0.9) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            /* Crisp shadow and inner glow */
+            box-shadow: 
+              0 2px 5px rgba(0, 0, 0, 0.08),
+              inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
         }
 
         .highlight-box {
-             background: rgba(255, 248, 220, 0.9); /* Solid Cornsilk */
+             background: linear-gradient(180deg, rgba(255, 248, 220, 0.95) 0%, rgba(255, 245, 210, 0.95) 100%);
              border-left: 4px solid #d4af37;
              border: 1px solid rgba(212, 175, 55, 0.3);
+             box-shadow: 0 4px 10px rgba(212, 175, 55, 0.15);
         }
 
         .spec-item .label {
           color: #3e2723 !important; /* Capuccino Dark */
           font-weight: 700;
-          text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+          text-shadow: 0 1px 0 rgba(255,255,255,0.8); /* Crisp text shadow */
         }
         
         .spec-item .value {
@@ -569,10 +576,11 @@
            font-weight: 600;
         }
 
+        /* Footer also gets the premium treatment */
         .footer {
-           background: linear-gradient(160deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
-           border: 1px solid rgba(255, 255, 255, 0.5);
-           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
+           background: linear-gradient(170deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 240, 240, 0.9) 100%);
+           border-top: 1px solid rgba(255, 255, 255, 0.8);
+           box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05) !important;
         }
       }
 
