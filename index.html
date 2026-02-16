@@ -503,11 +503,29 @@
           gap: 12px;
         }
 
-        #shareBtn {
-          padding: 12px 20px;
+        /* BUTTON REFINEMENT FOR MOBILE */
+        #shareBtn, .btn-analisis {
+          padding: 12px 20px !important; /* Less bulky */
           width: 100%; 
           min-width: auto;
-          font-size: 16px;
+          font-size: 15px !important; /* Smaller text */
+          font-weight: 700 !important; /* Less bold (was 900/800) */
+          letter-spacing: 0.5px !important; /* Tighter */
+          text-transform: capitalize !important; /* No more shouting ALL CAPS */
+          border-radius: 12px !important; /* Soften shape */
+          box-shadow: 0 4px 0 rgba(0,0,0,0.2) !important; /* Reduce 3D bulk */
+        }
+        
+        #shareBtn::first-letter, .btn-analisis::first-letter {
+             text-transform: uppercase !important;
+        }
+
+        /* HEADER TITLE REFINEMENT */
+        .header h1 {
+          font-size: 24px;
+          text-transform: capitalize; /* More elegant */
+          letter-spacing: -0.5px;
+          line-height: 1.2;
         }
 
         /* Modal Mobile Adjustment */
