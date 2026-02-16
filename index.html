@@ -777,23 +777,16 @@
           document.getElementById("label-admin").innerText = propertyConfig.infoPrincipal.labelExtra;
         }
 
-        // --- Video (FIXED LOGIC) ---
-        // Se valida que la URL exista y no esté vacía
+        // --- Video (ALWAYS VISIBLE) ---
+        // Se valida que la URL exista pero NO se oculta si falta, a petición del usuario
         if (propertyConfig.multimedia.videoUrl && propertyConfig.multimedia.videoUrl.trim() !== "") {
             const videoEl = document.getElementById("video-element");
             videoEl.src = propertyConfig.multimedia.videoUrl;
             if (propertyConfig.multimedia.videoThumbnail) {
                 videoEl.poster = propertyConfig.multimedia.videoThumbnail;
             }
-        } else {
-             // Ocultar wrapper de forma segura usando IDs
-            const vidWrapper = document.getElementById('video-wrapper');
-            if(vidWrapper) vidWrapper.style.display = 'none';
-            
-            const vidTitle = document.getElementById('video-title');
-            if(vidTitle) vidTitle.style.display = 'none';
         }
-
+        // Eliminado bloque else de ocultamiento para permitir edición a futuro
 
         // --- Detalles (Specs Grid) ---
         const specsGrid = document.getElementById("specs-grid");
