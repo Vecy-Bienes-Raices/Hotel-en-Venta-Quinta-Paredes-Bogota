@@ -1,16 +1,16 @@
 /**
- * 🌍 CONFIGURACIÓN UNIVERSAL VECY - HOTEL MONT BLEU
+ * 🌍 CONFIGURACIÓN UNIVERSAL VECY - HOTEL WHITE LABEL
  */
 
 const propertyConfig = {
   // 1. SEO
   seo: {
     title: "Hotel Cerca de Corferias: Elegancia y Rentabilidad Estratégica",
-    description: "Venta de Hotel en Quinta Paredes, Bogotá. Ubicación estratégica a media cuadra de Corferias. 144m² lote, ~600m² construidos. 15 habitaciones, penthouse y zona húmeda.",
+    description: "Venta de Hotel en Quinta Paredes, Bogotá. Ubicación estratégica a media cuadra de Corferias. 144m² lote, 600m² construidos. 14 habitaciones + Penthouse y zona húmeda.",
     keywords: "Hotel en Venta, Quinta Paredes, Corferias, Inversión Hotelera, Bogotá, Rentabilidad, Edificio Comercial",
     ogUrl: "",
     ogImage: "assets/portada.png",
-    author: "Vecy Bienes Raíces",
+    author: "", 
     copyright: "2026"
   },
   
@@ -19,16 +19,16 @@ const propertyConfig = {
     headerBadge: "❤️ ¡Oportunidad de Inversión! 🏨",
     tituloHtml: "HOTEL CERCA DE CORFERIAS BOGOTÁ - ELEGANCIA Y RENTABILIDAD ESTRATÉGICA",
     precioVenta: "$2.500.000.000",
-    valorAdmin: "Consultar",
+    valorAdmin: "No aplica",
     labelExtra: "💵 Administración"
   },
 
   // 3. Rejilla de Detalles
   detalles: [
     { label: "Área Lote", value: "144 m²", icon: "📐" },
-    { label: "Área Const.", value: "~600 m²", icon: "🏗️" },
-    { label: "Habitaciones", value: "15", icon: "🛏️" },
-    { label: "Niveles", value: "4 + Altillo", icon: "🏢" },
+    { label: "Área Const.", value: "600 m²", icon: "🏗️" },
+    { label: "Habitaciones", value: "14 + PH", icon: "🛏️" },
+    { label: "Niveles", value: "4 Pisos", icon: "🏢" },
     { label: "Rentabilidad", value: "Alta", icon: "📈" },
     { label: "Ubicación", value: "Q. Paredes", icon: "📍" }
   ],
@@ -37,12 +37,12 @@ const propertyConfig = {
   caracteristicasInternas: [
     { name: "Nivel 1: Lobby, Chimenea, 5 Habs", emoji: "🛋️" },
     { name: "Nivel 2: 6 Habs (Grupos)", emoji: "🛏️" },
-    { name: "Nivel 3: 3 Habs, Sauna, Lavandería", emoji: "🧖‍♀️" },
+    { name: "Nivel 3: 3 Habs, Sauna, Lavandería con Patio", emoji: "🧖‍♀️" },
     { name: "Nivel 4: Penthouse 1 Hab + Cocina Ind.", emoji: "👨‍🍳" },
     { name: "Reja de Seguridad Reforzada", emoji: "🛡️" },
     { name: "Sala de Espera y Comedor", emoji: "🍽️" }
   ],
-  destacadoInterno: "Distribución optimizada para alta rotación. Incluye Penthouse multifuncional para vivienda o renta, y cocina industrial para logística de desayunos.",
+  destacadoInterno: "Distribución optimizada. El tercer nivel cuenta con zona de lavandería completa y patio de ropas, permitiendo ofrecer servicio de lavandería como valor agregado.",
 
   // 5. Características Externas
   caracteristicasExternas: [
@@ -55,7 +55,6 @@ const propertyConfig = {
 
   // 6. Mapa
   mapa: {
-    // Coordenadas aproximadas de Quinta Paredes cerca a Corferias
     urlEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.852899450946!2d-74.09289262415166!3d4.63139364234559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bd2a0614481%3A0x6bd7787364239726!2sQuinta%20Paredes%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco", 
     titulo: "Ubicación Quinta Paredes"
   },
@@ -65,11 +64,23 @@ const propertyConfig = {
     titulo: "💎 Activo Estratégico en Corferias",
     texto: `
     <div class="roi-item">
-      <p><strong>Rentabilidad Comprobada:</strong> Ingresos netos de $28M (Baja) a $54M (Alta/Ferias).</p>
-      <p><strong>Infraestructura Completa:</strong> Operando actualmente con staff optimizado y costos eficientes.</p>
-      <div style="margin-top: 20px; text-align: center;">
-          <a href="analisis.html" style="background: #d4af37; color: white; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; box-shadow: 0 4px 10px rgba(212,175,55,0.4);">
-             📊 VER ANÁLISIS FINANCIERO Y JURÍDICO DETALLADO
+      <p><strong>Potencial Financiero:</strong> Ingresos Brutos estimados entre $28M (Baja) y $54M (Feria). *Sujeto a deducción de gastos operativos.</p>
+      <p><strong>Infraestructura Completa:</strong> Operando actualmente con staff optimizado.</p>
+      <div style="margin-top: 30px; text-align: center;">
+          <a href="analisis.html" 
+             style="background: linear-gradient(90deg, #d4af37 0%, #b8860b 100%); 
+                    color: white; 
+                    padding: 15px 30px; 
+                    text-decoration: none; 
+                    border-radius: 50px; 
+                    font-weight: 700; 
+                    font-size: 1.1em;
+                    display: inline-block; 
+                    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.4);
+                    transition: transform 0.2s, box-shadow 0.2s;
+                    border: 1px solid rgba(255,255,255,0.3);
+                    letter-spacing: 0.5px;">
+             📊 VER ANÁLISIS FINANCIERO DETALLADO
           </a>
       </div>
     </div>`
@@ -77,7 +88,7 @@ const propertyConfig = {
 
   // 8. Multimedia
   multimedia: {
-    videoUrl: "", // Dejar vacío por ahora
+    videoUrl: "", 
     videoThumbnail: "assets/portada.png",
     imagesCount: 20, 
     imagePrefix: "assets/",
@@ -98,10 +109,10 @@ const propertyConfig = {
 
 💰 *Precio:* $2.500.000.000
 📍 *Ubicación:* Quinta Paredes (Media cuadra de Corferias)
-📐 *Área:* 600m² construidos aprox.
-🛏️ *Capacidad:* 15 Habitaciones + Penthouse
+📐 *Área:* 600m² construidos.
+🛏️ *Capacidad:* 14 Habitaciones + Penthouse
 
-✨ *Rentabilidad:* $28M - $54M Mensuales
+✨ *Rentabilidad:* Potencial ingresos brutos hasta $54M/mes (Ferias)
 🏢 *Estado:* Operando activamente
 
 🔗 *Ver Fotos y Análisis Financiero:*

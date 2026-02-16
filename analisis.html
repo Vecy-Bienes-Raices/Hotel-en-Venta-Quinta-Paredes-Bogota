@@ -32,12 +32,12 @@
         color: #1a1a1a;
       }
       .glass-card {
-        background: rgba(255, 255, 255, 0.85); /* Mayor opacidad para lectura */
+        background: rgba(255, 255, 255, 0.9); /* Mayor opacidad para lectura y look clean */
         backdrop-filter: blur(25px) saturate(180%);
         -webkit-backdrop-filter: blur(25px) saturate(180%);
         border-radius: 20px;
         border: 1.5px solid rgba(255, 255, 255, 0.4);
-        padding: 30px;
+        padding: 40px 30px;
         margin-bottom: 20px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       }
@@ -48,157 +48,151 @@
       p, li { font-size: 16px; line-height: 1.6; margin-bottom: 10px; text-align: justify; }
       ul { margin-left: 20px; margin-bottom: 15px; }
       
-      .highlight { background: rgba(212, 175, 55, 0.15); padding: 2px 5px; border-radius: 4px; font-weight: 600; }
-      .finance-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: rgba(255,255,255,0.5); border-radius: 10px; overflow: hidden; }
+      .highlight { background: rgba(212, 175, 55, 0.2); padding: 2px 5px; border-radius: 4px; font-weight: 700; color: #3e2723; }
+      .finance-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: rgba(255,255,255,0.7); border-radius: 10px; overflow: hidden; }
       .finance-table th, .finance-table td { padding: 12px; border: 1px solid rgba(0,0,0,0.1); text-align: center; }
-      .finance-table th { background: #d4af37; color: white; }
+      .finance-table th { background: linear-gradient(135deg, #d4af37, #b8860b); color: white; }
       .finance-table tr:nth-child(even) { background: rgba(0,0,0,0.03); }
 
       .btn-back {
         display: inline-block;
-        background: #3e2723;
+        background: linear-gradient(90deg, #3e2723 0%, #5d4037 100%);
         color: white;
-        padding: 10px 20px;
+        padding: 12px 25px;
         border-radius: 30px;
         text-decoration: none;
         font-weight: bold;
         margin-bottom: 20px;
-        transition: transform 0.2s;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       }
-      .btn-back:hover { transform: scale(1.05); background: #5c4033; }
+      .btn-back:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
 
       @media (max-width: 600px) {
         body { padding: 10px; }
-        .glass-card { padding: 15px; }
-        h1 { font-size: 24px; }
-        .finance-table { font-size: 13px; }
+        .glass-card { padding: 20px 15px; }
+        h1 { font-size: 22px; }
+        .finance-table { font-size: 12px; }
       }
     </style>
   </head>
   <body>
-    <a href="index.html" class="btn-back">⬅ Volver a la Ficha</a>
+    <a href="index.html" class="btn-back">⬅ Volver a la Ficha Principal</a>
 
     <div class="glass-card">
       <h1>📈 Informe de Valoración y Análisis Jurídico</h1>
-      <p style="text-align: center; font-weight: bold; color: #666;">HOTEL EN QUINTA PAREDES - CORFERIAS</p>
+      <p style="text-align: center; font-weight: bold; color: #666; margin-bottom: 30px;">HOTEL EN QUINTA PAREDES - CORFERIAS</p>
 
       <h2>1. Ficha Técnica y Dimensiones</h2>
-      <p>Basados en el Certificado de Tradición y Libertad y el Impuesto Predial:</p>
+      <p>Basados en documentos legales e inspección física:</p>
       <ul>
         <li><strong>Área del Lote:</strong> 144 m² (8m de frente por 18m de fondo).</li>
-        <li><strong>Área Construida Estimada:</strong> Aprox. 580 - 600 m² distribuidos en 4 niveles + nivel superior funcional.</li>
+        <li><strong>Área Construida Estimada:</strong> 600 m² distribuidos en 4 niveles (sin altillo).</li>
         <li><strong>Chip Catastral:</strong> AAA0073HMEP.</li>
         <li><strong>Avalúo Catastral 2026:</strong> $1.199.634.000 COP.</li>
       </ul>
 
-      <h2>2. Distribución Arquitectónica (Agilidad Total)</h2>
+      <h2>2. Distribución Arquitectónica</h2>
       <h3>1er Nivel: Operación y Bienvenida 🛋️</h3>
       <ul>
-        <li><strong>Seguridad:</strong> Reja de seguridad frontal reforzada.</li>
-        <li><strong>Parqueo:</strong> Espacio cubierto para un vehículo.</li>
-        <li><strong>Lobby:</strong> Recepción moderna con sala de espera, chimenea funcional y comedor.</li>
-        <li><strong>Acomodación:</strong> 5 habitaciones (3 matrimoniales, 1 sencilla y 1 familiar de 3 camas).</li>
+        <li><strong>Seguridad:</strong> Reja exterior de seguridad reforzada.</li>
+        <li><strong>Parqueo:</strong> Espacio semicubierto.</li>
+        <li><strong>Lobby:</strong> Recepción, sala de espera, chimenea funcional y comedor auxiliar.</li>
+        <li><strong>Acomodación:</strong> 5 habitaciones (3 matrimoniales, 1 sencilla y 1 familiar).</li>
       </ul>
 
       <h3>2do Nivel: Capacidad Máxima 🛏️</h3>
       <ul>
-        <li><strong>Acomodación:</strong> 6 habitaciones (2 matrimoniales, 1 sencilla, 1 de dos camas y 1 habitación familiar de 3 camas).</li>
-        <li><em>Ideal para grupos corporativos y feriantes.</em></li>
+        <li><strong>Acomodación:</strong> 6 habitaciones (Distribución mixta para grupos y parejas).</li>
+        <li><em>Enfoque en alta ocupación durante ferias.</em></li>
       </ul>
 
       <h3>3er Nivel: Bienestar y Servicios 🧖‍♀️</h3>
       <ul>
-        <li><strong>Acomodación:</strong> 3 habitaciones (1 matrimonial, 1 twin/matrimonial y 1 familiar de 3 camas).</li>
-        <li><strong>Zona Húmeda:</strong> Sauna privado (valor agregado para huéspedes internacionales).</li>
-        <li><strong>Zona de Servicios:</strong> Lavandería, área de planchado, depósito de suministros y almacenamiento de lencería profesional.</li>
+        <li><strong>Acomodación:</strong> 3 habitaciones (Configuración flexible).</li>
+        <li><strong>Zona Húmeda:</strong> Sauna privado.</li>
+        <li><strong>Zona de Lavandería:</strong> Área completa con patio de ropas para extendido de lencería (sábanas, manteles, toallas). Se ofrece servicio de lavandería como ingreso extra.</li>
       </ul>
 
       <h3>4to Nivel: Penthouse Multifuncional 🏠</h3>
       <ul>
-        <li><strong>Vivienda o Renta:</strong> Apartamento de 1 habitación con baño privado y baño social. Bar privado, sala y comedor espacioso.</li>
-        <li><strong>Centro Gastronómico:</strong> Cocina con estufa industrial, epicentro de la logística de desayunos del hotel.</li>
+        <li><strong>Vivienda/Administración:</strong> Apartamento completo con habitación, baño privado y social.</li>
+        <li><strong>Logística:</strong> Cocina con estufa industrial para preparación de desayunos del hotel.</li>
       </ul>
 
       <h2>3. Análisis Jurídico y Rentabilidad</h2>
-      <p>Como consultores con pleno conocimiento jurídico idóneo, destacamos:</p>
+      <p>Consultoría especializada:</p>
       <ul>
-        <li><strong>Estado Legal:</strong> Matrícula inmobiliaria 50C-265802 activa y al día.</li>
-        <li><strong>Permiso de Suelo:</strong> Cuenta con licencia comercial vigente para operación hotelera.</li>
+        <li><strong>Estado Legal:</strong> Matrícula inmobiliaria activa y libre de limitaciones.</li>
+        <li><strong>Uso de Suelo:</strong> Licencia comercial habilitada para hotelería.</li>
       </ul>
-      <h3>Desempeño Financiero (Datos Reales):</h3>
+      <h3>Desempeño Financiero (Estimado):</h3>
+      <p><em>Nota: Los valores presentados corresponden a <strong>Ingresos Brutos</strong>. Para el cálculo de ROI neto, se deben descontar los gastos operativos (~$11M - $12M/mes).</em></p>
       <ul>
-        <li><strong>Temporada Baja:</strong> Ingresos netos aprox. de <span class="highlight">$28.000.000</span>.</li>
-        <li><strong>Temporada Alta (Ferias):</strong> Ingresos escalan hasta <span class="highlight">$54.000.000</span>.</li>
-        <li><strong>Costos Operativos:</strong> Optimizados en ~$11M - $12M mensuales (nómina 4 empleados + servicios).</li>
-        <li><strong>Flujo Adicional:</strong> Ingresos por comisiones de taxis, convenios y lavandería.</li>
-      </ul>
-
-      <h2>4. Informe de Valoración (Precio vs. Mercado)</h2>
-      <ul>
-        <li><strong>Precio de Venta:</strong> $2.500.000.000 (Target: $2.200.000.000).</li>
-        <li><strong>Relación Comercial/Catastral:</strong> 2.08x.</li>
-        <li><strong>Dictamen VECY:</strong> En Quinta Paredes, los inmuebles comerciales frente a Corferias se transan entre 1.8x y 2.5x del avalúo. El precio target de $2.2MM es <strong>altamente competitivo</strong>.</li>
+        <li><strong>Temporada Baja:</strong> Ingresos Brutos aprox. <span class="highlight">$28.000.000</span>.</li>
+        <li><strong>Temporada Alta (Ferias):</strong> Ingresos Brutos escalan hasta <span class="highlight">$54.000.000</span>.</li>
+        <li><strong>Egresos Operativos:</strong> ~$12.000.000 (Incluye nómina 4 empleados, servicios y mantenimiento).</li>
+        <li><strong>Ingresos Adicionales:</strong> Comisiones (Taxis/Tours), lavandería y convenios.</li>
       </ul>
 
-      <h2>5. Proyección Financiera a 5 Años</h2>
-      <p>Basado en facturación promedio mensual ponderada de $35.000.000.</p>
+      <h2>4. Informe de Valoración</h2>
+      <ul>
+        <li><strong>Precio de Venta:</strong> $2.500.000.000.</li>
+        <li><strong>Valor por m² Construido:</strong> Competitivo para el sector comercial de Quinta Paredes.</li>
+        <li><strong>Oportunidad:</strong> Inmueble operando, "llave en mano".</li>
+      </ul>
+
+      <h2>5. Proyección Financiera (Escenario Conservador)</h2>
+      <p>Base: Facturación promedio mensual ponderada de $35M (Bruto).</p>
       <div style="overflow-x:auto;">
         <table class="finance-table">
           <thead>
             <tr>
               <th>Año</th>
-              <th>Ingresos (Anual)</th>
-              <th>Egresos (OpEx+CAPEX)</th>
-              <th>EBITDA</th>
-              <th>Rentabilidad</th>
+              <th>Ingresos Brutos</th>
+              <th>Egresos Op.*</th>
+              <th>Utilidad Operativa</th>
+              <th>Margen Aprox.</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
               <td>$420.000.000</td>
-              <td>$180.000.000*</td>
-              <td>$240.000.000</td>
-              <td>10.9%</td>
+              <td>$144.000.000</td>
+              <td>$276.000.000</td>
+              <td>65%</td>
             </tr>
             <tr>
               <td>2</td>
               <td>$445.200.000</td>
-              <td>$155.000.000</td>
-              <td>$290.200.000</td>
-              <td>13.1%</td>
+              <td>$152.000.000</td>
+              <td>$293.200.000</td>
+              <td>66%</td>
             </tr>
             <tr>
               <td>3</td>
               <td>$471.912.000</td>
-              <td>$165.000.000</td>
-              <td>$306.912.000</td>
-              <td>13.9%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>$500.226.720</td>
-              <td>$175.000.000</td>
-              <td>$325.226.720</td>
-              <td>14.7%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>$530.240.323</td>
-              <td>$185.000.000</td>
-              <td>$345.240.323</td>
-              <td>15.6%</td>
+              <td>$161.000.000</td>
+              <td>$310.912.000</td>
+              <td>66%</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size: 0.9em; font-style: italic;">*El año 1 incluye una reserva de $40M para arreglos locativos urgentes en techos y acabados.</p>
+      <p style="font-size: 0.8em; font-style: italic;">*Egresos estimados con incremento anual IPC. No incluye impuestos ni CAPEX extraordinario.</p>
 
       <h2>6. Motivo de Venta</h2>
-      <p>La enajenación responde a una planeación de retiro por motivos de salud del propietario, garantizando disposición real de negociación.</p>
+      <p>Retiro por motivos de salud del propietario. Disposición de negociación.</p>
 
-      <div style="text-align: center; margin-top: 30px;">
-        <a href="index.html" class="btn-back" style="background: #d4af37;">⬅ Volver a Ficha Principal</a>
+      <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+        <a href="index.html" class="btn-back" 
+           style="background: linear-gradient(90deg, #3e2723 0%, #5d4037 100%);
+                  padding: 15px 35px;
+                  font-size: 1.1em;
+                  box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+           ⬅ Volver a Ficha Principal
+        </a>
       </div>
     </div>
   </body>
