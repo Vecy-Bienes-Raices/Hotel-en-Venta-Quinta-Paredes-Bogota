@@ -26,7 +26,7 @@ const propertyConfig = {
   // 3. Rejilla de Detalles
   detalles: [
     { label: "Área Lote", value: "144 m²", icon: "📐" },
-    { label: "Área Const.", value: "600 m²", icon: "🏗️" },
+    { label: "Área Const.", value: "~600 m²", icon: "🏗️" },
     { label: "Habitaciones", value: "14 + PH", icon: "🛏️" },
     { label: "Niveles", value: "4 Pisos", icon: "🏢" },
     { label: "Rentabilidad", value: "Alta", icon: "📈" },
