@@ -5,7 +5,7 @@
 const propertyConfig = {
   // 1. SEO
   seo: {
-    title: "Hotel Mont Bleu: Elegancia y Rentabilidad en Quinta Paredes",
+    title: "Hotel Cerca de Corferias: Elegancia y Rentabilidad Estratégica",
     description: "Venta de Hotel en Quinta Paredes, Bogotá. Ubicación estratégica a media cuadra de Corferias. 144m² lote, ~600m² construidos. 15 habitaciones, penthouse y zona húmeda.",
     keywords: "Hotel en Venta, Quinta Paredes, Corferias, Inversión Hotelera, Bogotá, Rentabilidad, Edificio Comercial",
     ogUrl: "",
@@ -17,7 +17,7 @@ const propertyConfig = {
   // 2. Encabezado Principal
   infoPrincipal: {
     headerBadge: "❤️ ¡Oportunidad de Inversión! 🏨",
-    tituloHtml: "HOTEL MONT BLEU <br><span style='font-size:0.7em'>ELEGANCIA Y RENTABILIDAD ESTRATÉGICA</span>",
+    tituloHtml: "HOTEL CERCA DE CORFERIAS BOGOTÁ - ELEGANCIA Y RENTABILIDAD ESTRATÉGICA",
     precioVenta: "$2.500.000.000",
     valorAdmin: "Consultar",
     labelExtra: "💵 Administración"
@@ -94,7 +94,7 @@ const propertyConfig = {
 
   // 9. Botón Compartir
   share: {
-    whatsappText: `🏨 *HOTEL MONT BLEU - OPORTUNIDAD EN CORFERIAS*
+    whatsappText: `🏨 *HOTEL CERCA DE CORFERIAS - ELEGANCIA Y RENTABILIDAD*
 
 💰 *Precio:* $2.500.000.000
 📍 *Ubicación:* Quinta Paredes (Media cuadra de Corferias)
