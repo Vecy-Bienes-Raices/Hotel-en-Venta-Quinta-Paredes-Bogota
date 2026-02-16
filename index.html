@@ -306,6 +306,10 @@
         overflow: hidden;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       }
+      .slides-wrapper {
+        width: 100%;
+        height: 100%;
+      }
       .slider-image {
         width: 100%;
         height: 100%;
@@ -734,6 +738,9 @@
     <div class="section-title">📸 Galería de Fotos</div>
     <div class="glass-card gallery-section">
       <div class="slider-container">
+        <div class="slides-wrapper">
+            <!-- Imágenes se inyectarán aquí -->
+        </div>
         <button class="slider-arrow prev-arrow">❮</button>
         <button class="slider-arrow next-arrow">❯</button>
       </div>
@@ -930,14 +937,14 @@
 
         // --- Galería ---
         const sliderContainer = document.querySelector(".slider-container");
+        const slidesWrapper = document.querySelector(".slides-wrapper");
         const thumbnailStrip = document.querySelector(".thumbnail-strip");
         const imagesList = propertyConfig.multimedia.imagesList;
         let currentIndex = 0;
 
         // Cargar imágenes
-        // Cargar imágenes
-        // Usamos referencia explícita a la primera flecha para insertar antes de los controles
-        const insertAnchor = sliderContainer.querySelector('.slider-arrow'); 
+        // Limpiamos wrapper por si acaso
+        slidesWrapper.innerHTML = '';
         
         imagesList.forEach((src, index) => {
           // Slide
@@ -946,13 +953,9 @@
           // Carga diferida (lazy) para las que no son la primera
           if (index > 0) img.loading = "lazy"; 
           img.className = `slider-image ${index === 0 ? "active" : ""}`;
-          // Insertamos antes de las flechas: [Img1, Img2, ... Arrow, Arrow]
-          // Esto garantiza que el DOM order coincida con el Array order
-          if (insertAnchor) {
-              sliderContainer.insertBefore(img, insertAnchor);
-          } else {
-              sliderContainer.appendChild(img); // Fallback
-          }
+          
+          // Inserción directa en orden (append)
+          slidesWrapper.appendChild(img);
 
           // Thumbnail
           const thumb = document.createElement("div");
