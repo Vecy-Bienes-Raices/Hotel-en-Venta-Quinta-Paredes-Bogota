@@ -1046,8 +1046,8 @@
         shareBtn.addEventListener("click", async () => {
           const shareData = {
             title: propertyConfig.seo.title,
-            text: propertyConfig.share.whatsappText,
-            url: window.location.href, // Compartir URL actual
+            text: propertyConfig.share.whatsappText
+            // url: eliminada para evitar duplicados, ya que whatsappText la incluye explícitamente
           };
 
           // Intentar API Nativa primero
