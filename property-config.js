@@ -76,7 +76,7 @@ const propertyConfig = {
 
   // 8. Multimedia
   multimedia: {
-    videoUrl: "", 
+    videoUrl: "assets/Video_H_Corferias.mp4", 
     videoThumbnail: "assets/portada.png",
     imagesCount: 20, 
     imagePrefix: "assets/",
