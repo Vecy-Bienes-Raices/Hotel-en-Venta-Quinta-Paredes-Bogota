@@ -83,6 +83,7 @@ const propertyConfig = {
     imageExtension: ".jpeg",
     imagesList: [
       "assets/portada.png",
+      "assets/1.1.png", "assets/1.3.png",
       "assets/2.jpeg", "assets/3.jpeg", "assets/4.jpeg", "assets/5.jpeg",
       "assets/6.jpeg", "assets/7.jpeg", "assets/8.jpeg", "assets/9.jpeg",
       "assets/10.jpeg", "assets/11.jpeg", "assets/12.jpeg", "assets/13.jpeg",
