@@ -1041,6 +1041,9 @@
         });
 
 
+      });
+    </script>
+
     <!-- Custom Share Modal -->
     <div id="customShareModal" class="share-modal-overlay">
       <div class="share-modal-content glass-card">
@@ -1143,97 +1146,97 @@
     </style>
 
     <script>
-       // --- Share Modal Logic ---
-       const modal = document.getElementById('customShareModal');
-       const closeModalBtn = modal.querySelector('.close-modal');
-       const shareBtn = document.getElementById("shareBtn");
-       
-       // Open Modal
-       shareBtn.addEventListener('click', (e) => {
-           e.stopPropagation();
-           modal.classList.add('active');
-       });
+      document.addEventListener("DOMContentLoaded", () => {
+           // --- Share Modal Logic ---
+           const modal = document.getElementById('customShareModal');
+           const closeModalBtn = modal.querySelector('.close-modal');
+           const shareBtn = document.getElementById("shareBtn");
+           
+           if (shareBtn && modal) {
+               // Open Modal
+               shareBtn.addEventListener('click', (e) => {
+                   e.stopPropagation();
+                   modal.classList.add('active');
+               });
 
-       // Close Modal
-       closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
-       modal.addEventListener('click', (e) => {
-           if (e.target === modal) modal.classList.remove('active');
-       });
+               // Close Modal
+               closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
+               modal.addEventListener('click', (e) => {
+                   if (e.target === modal) modal.classList.remove('active');
+               });
 
-       // Handle Options
-       document.querySelectorAll('.share-option').forEach(btn => {
-           btn.addEventListener('click', () => {
-               const network = btn.dataset.network;
-               // Usar la URL limpia de propiedadConfig si es posible, o la actual
-               const url = "https://hotel-quinta-paredes-bogota.netlify.app/";
-               const text = propertyConfig.share.whatsappText; // Texto completo para WhatsApp
-               const title = propertyConfig.seo.title;
+               // Handle Options
+               document.querySelectorAll('.share-option').forEach(btn => {
+                   btn.addEventListener('click', () => {
+                       const network = btn.dataset.network;
+                       const url = "https://hotel-quinta-paredes-bogota.netlify.app/";
+                       const text = propertyConfig.share.whatsappText; 
+                       const title = propertyConfig.seo.title;
 
-               let shareUrl = '';
+                       let shareUrl = '';
 
-               switch(network) {
-                   case 'whatsapp':
-                       shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
-                       break;
-                   case 'facebook':
-                       shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-                       break;
-                   case 'x':
-                       shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
-                       break;
-                   case 'linkedin':
-                       shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
-                       break;
-                   case 'copy':
-                       navigator.clipboard.writeText(text).then(() => {
-                           const original = btn.innerHTML;
-                           btn.innerHTML = '¡Copiado! ✅';
-                           setTimeout(() => {
-                               btn.innerHTML = original;
-                               modal.classList.remove('active');
-                           }, 1500);
-                       });
-                       return; // No abrir ventana
-               }
+                       switch(network) {
+                           case 'whatsapp':
+                               shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+                               break;
+                           case 'facebook':
+                               shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+                               break;
+                           case 'x':
+                               shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
+                               break;
+                           case 'linkedin':
+                               shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+                               break;
+                           case 'copy':
+                               navigator.clipboard.writeText(text).then(() => {
+                                   const original = btn.innerHTML;
+                                   btn.innerHTML = '¡Copiado! ✅';
+                                   setTimeout(() => {
+                                       btn.innerHTML = original;
+                                       modal.classList.remove('active');
+                                   }, 1500);
+                               });
+                               return; 
+                       }
 
-               if (shareUrl) {
-                   window.open(shareUrl, '_blank', 'width=600,height=400');
-                   modal.classList.remove('active');
-               }
-           });
-       });
+                       if (shareUrl) {
+                           window.open(shareUrl, '_blank', 'width=600,height=400');
+                           modal.classList.remove('active');
+                       }
+                   });
+               });
+           }
 
-        document.addEventListener("DOMContentLoaded", () => {
-         // Existing Logic... (Thumbnail drag, etc)
-         const stripContainer = document.querySelector('.thumbnail-container');
-         // ... (mantener lógica existente de drag) ...
-         if(stripContainer) {
-            let isDown = false;
-            let startX;
-            let scrollLeft;
-            stripContainer.addEventListener('mousedown', (e) => {
-              isDown = true;
-              stripContainer.classList.add('grabbing');
-              startX = e.pageX - stripContainer.offsetLeft;
-              scrollLeft = stripContainer.scrollLeft;
-            });
-            stripContainer.addEventListener('mouseleave', () => {
-              isDown = false;
-              stripContainer.classList.remove('grabbing');
-            });
-            stripContainer.addEventListener('mouseup', () => {
-              isDown = false;
-              stripContainer.classList.remove('grabbing');
-            });
-            stripContainer.addEventListener('mousemove', (e) => {
-              if (!isDown) return;
-              e.preventDefault();
-              const x = e.pageX - stripContainer.offsetLeft;
-              const walk = (x - startX) * 2;
-              stripContainer.scrollLeft = scrollLeft - walk;
-            });
-         }
-       });
+           // --- Drag Thumbnail Strip (Restored) ---
+           const stripContainer = document.querySelector('.thumbnail-container');
+           if(stripContainer) {
+               let isDown = false;
+               let startX;
+               let scrollLeft;
+               stripContainer.addEventListener('mousedown', (e) => {
+                 isDown = true;
+                 stripContainer.classList.add('grabbing');
+                 startX = e.pageX - stripContainer.offsetLeft;
+                 scrollLeft = stripContainer.scrollLeft;
+               });
+               stripContainer.addEventListener('mouseleave', () => {
+                 isDown = false;
+                 stripContainer.classList.remove('grabbing');
+               });
+               stripContainer.addEventListener('mouseup', () => {
+                 isDown = false;
+                 stripContainer.classList.remove('grabbing');
+               });
+               stripContainer.addEventListener('mousemove', (e) => {
+                 if (!isDown) return;
+                 e.preventDefault();
+                 const x = e.pageX - stripContainer.offsetLeft;
+                 const walk = (x - startX) * 2;
+                 stripContainer.scrollLeft = scrollLeft - walk;
+               });
+           }
+      });
     </script>
   </body>
 </html>
