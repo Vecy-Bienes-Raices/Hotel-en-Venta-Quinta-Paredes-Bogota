@@ -67,24 +67,7 @@ const propertyConfig = {
       <p><strong>Potencial Financiero:</strong> Ingresos Brutos estimados entre $28M (Baja) y $54M (Feria). *Sujeto a deducción de gastos operativos.</p>
       <p><strong>Infraestructura Completa:</strong> Operando actualmente con staff optimizado.</p>
       <div style="margin-top: 30px; text-align: center;">
-          <a href="analisis.html" 
-             style="background: linear-gradient(180deg, #FF8C00 0%, #FF6F00 50%, #E65100 100%); 
-                    color: white; 
-                    padding: 18px 40px; 
-                    text-decoration: none; 
-                    border-radius: 50px; 
-                    font-weight: 800; 
-                    font-size: 1.2em;
-                    display: inline-block; 
-                    box-shadow: 
-                      0 6px 0 #BF360C, 
-                      0 12px 20px rgba(191, 54, 12, 0.4),
-                      inset 0 2px 0 rgba(255, 255, 255, 0.5);
-                    transition: transform 0.2s, box-shadow 0.2s;
-                    border: none;
-                    text-transform: uppercase;
-                    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-                    letter-spacing: 1px;">
+          <a href="analisis.html" class="btn-analisis">
              📊 VER ANÁLISIS FINANCIERO DETALLADO
           </a>
       </div>

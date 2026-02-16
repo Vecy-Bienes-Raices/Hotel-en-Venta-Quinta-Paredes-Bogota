@@ -634,6 +634,64 @@
         transform: translateY(-2px);
       }
 
+      /* Botón Análisis 3D Animado */
+      .btn-analisis {
+        background: linear-gradient(180deg, #FF8C00 0%, #FF6F00 50%, #E65100 100%);
+        color: white;
+        padding: 18px 40px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 800;
+        font-size: 1.2em;
+        display: inline-block;
+        box-shadow: 
+          0 6px 0 #BF360C, 
+          0 12px 20px rgba(191, 54, 12, 0.4),
+          inset 0 2px 0 rgba(255, 255, 255, 0.5);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        border: none;
+        text-transform: uppercase;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-analisis:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 
+          0 10px 0 #BF360C, 
+          0 20px 30px rgba(191, 54, 12, 0.6),
+          inset 0 2px 0 rgba(255, 255, 255, 0.5);
+        background: linear-gradient(180deg, #FFA726 0%, #FF8F00 50%, #EF6C00 100%);
+      }
+      .btn-analisis:active {
+        transform: translateY(2px);
+        box-shadow: 
+          0 2px 0 #BF360C, 
+          0 4px 10px rgba(191, 54, 12, 0.3),
+          inset 0 2px 0 rgba(255, 255, 255, 0.5);
+      }
+      /* Shine Effect */
+      .btn-analisis::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.4) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: rotate(45deg) translate(-150%, -150%);
+        transition: transform 0.7s;
+      }
+      .btn-analisis:hover::after {
+        transform: rotate(45deg) translate(50%, 50%);
+      }
+
       /* Map */
       .map-container {
         padding: 10px;
