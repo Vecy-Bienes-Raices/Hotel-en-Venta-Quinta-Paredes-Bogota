@@ -507,7 +507,7 @@
           -webkit-backdrop-filter: none !important;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
         }
-
+        
         /* Faux Glass & 3D Effect for Mobile - MATCHING PC TONES */
         .glass-card {
            background: linear-gradient(160deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.35) 100%);
@@ -664,8 +664,10 @@
       </div>
     </div>
 
-    <div class="section-title">🎥 Recorrido Virtual</div>
-    <div class="glass-card video-wrapper">
+    <!-- Título con ID agregado -->
+    <div id="video-title" class="section-title">🎥 Recorrido Virtual</div>
+    <!-- Wrapper con ID agregado -->
+    <div id="video-wrapper" class="glass-card video-wrapper">
       <video id="video-element" src="" controls playsinline preload="metadata">
         Tu navegador no soporta el tag de video.
       </video>
@@ -767,7 +769,6 @@
 
         // --- Info Principal ---
         document.getElementById("header-badge").innerText = propertyConfig.infoPrincipal.headerBadge;
-        // USAMOS INNERTEXT para evitar inyeccion HTML no deseada, el config ya tiene texto plano
         document.getElementById("header-title").innerText = propertyConfig.infoPrincipal.tituloHtml; 
         document.getElementById("precio-venta").innerText = propertyConfig.infoPrincipal.precioVenta;
         document.getElementById("valor-admin").innerText = propertyConfig.infoPrincipal.valorAdmin;
@@ -776,17 +777,21 @@
           document.getElementById("label-admin").innerText = propertyConfig.infoPrincipal.labelExtra;
         }
 
-        // --- Video ---
-        if (propertyConfig.multimedia.videoUrl) {
+        // --- Video (FIXED LOGIC) ---
+        // Se valida que la URL exista y no esté vacía
+        if (propertyConfig.multimedia.videoUrl && propertyConfig.multimedia.videoUrl.trim() !== "") {
             const videoEl = document.getElementById("video-element");
             videoEl.src = propertyConfig.multimedia.videoUrl;
             if (propertyConfig.multimedia.videoThumbnail) {
                 videoEl.poster = propertyConfig.multimedia.videoThumbnail;
             }
         } else {
-             // Ocultar wrapper si no hay video
-            document.querySelector('.video-wrapper').style.display = 'none';
-            document.querySelector('.section-title:nth-of-type(1)').style.display = 'none'; // Ocultar título Recorrido Virtual
+             // Ocultar wrapper de forma segura usando IDs
+            const vidWrapper = document.getElementById('video-wrapper');
+            if(vidWrapper) vidWrapper.style.display = 'none';
+            
+            const vidTitle = document.getElementById('video-title');
+            if(vidTitle) vidTitle.style.display = 'none';
         }
 
 
