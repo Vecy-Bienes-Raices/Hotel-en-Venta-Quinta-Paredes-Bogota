@@ -935,8 +935,9 @@
         let currentIndex = 0;
 
         // Cargar imágenes
-        // Usamos una referencia fija al primer hijo (probablemente la flecha o texto)
-        const firstChild = sliderContainer.firstChild; 
+        // Cargar imágenes
+        // Usamos referencia explícita a la primera flecha para insertar antes de los controles
+        const insertAnchor = sliderContainer.querySelector('.slider-arrow'); 
         
         imagesList.forEach((src, index) => {
           // Slide
@@ -945,8 +946,13 @@
           // Carga diferida (lazy) para las que no son la primera
           if (index > 0) img.loading = "lazy"; 
           img.className = `slider-image ${index === 0 ? "active" : ""}`;
-          // Insertamos siempre antes del mismo elemento original para mantener el orden
-          sliderContainer.insertBefore(img, firstChild);
+          // Insertamos antes de las flechas: [Img1, Img2, ... Arrow, Arrow]
+          // Esto garantiza que el DOM order coincida con el Array order
+          if (insertAnchor) {
+              sliderContainer.insertBefore(img, insertAnchor);
+          } else {
+              sliderContainer.appendChild(img); // Fallback
+          }
 
           // Thumbnail
           const thumb = document.createElement("div");
